@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUn-71-z66">
+                                <rect key="frame" x="212" y="296" width="175" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="RCw-ls-7vR"/>
+                                    <constraint firstAttribute="height" constant="40" id="nqz-cx-8BE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u67-Mv-2Yg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-MV-XrV">
+                                <rect key="frame" x="150" y="162" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ae4-Kn-VAm"/>
+                                    <constraint firstAttribute="width" constant="300" id="c44-tZ-8FS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71S-hl-czW">
+                                <rect key="frame" x="150" y="225" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Wj-qX-3SA"/>
+                                    <constraint firstAttribute="width" constant="300" id="tIF-On-6RU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch ID Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-kD-VKr">
+                                <rect key="frame" x="150" y="63" width="300" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="6wm-5O-KHZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="9h5-4d-uUG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-QH-1Wd">
+                                <rect key="frame" x="279" y="372" width="42" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Gcx-Qa-YeM"/>
+                                    <constraint firstAttribute="width" constant="42" id="ZCF-yU-a6v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30l-Gb-RIr">
+                                <rect key="frame" x="260" y="435" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Rfr-nl-w5w"/>
+                                    <constraint firstAttribute="height" constant="80" id="m6L-CT-xm6"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Touch"/>
+                                <connections>
+                                    <action selector="authenticateButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ns-Cx-SP0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yX5-QH-1Wd" firstAttribute="top" secondItem="qUn-71-z66" secondAttribute="bottom" constant="36" id="7xt-pM-TfW"/>
+                            <constraint firstItem="fYP-MV-XrV" firstAttribute="top" secondItem="kEk-kD-VKr" secondAttribute="bottom" constant="40" id="DEV-gd-efG"/>
+                            <constraint firstItem="71S-hl-czW" firstAttribute="top" secondItem="fYP-MV-XrV" secondAttribute="bottom" constant="33" id="GLZ-Jy-SE4"/>
+                            <constraint firstItem="kEk-kD-VKr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="H0E-3r-xJV"/>
+                            <constraint firstItem="30l-Gb-RIr" firstAttribute="top" secondItem="yX5-QH-1Wd" secondAttribute="bottom" constant="37" id="Mgj-wR-xOi"/>
+                            <constraint firstItem="qUn-71-z66" firstAttribute="top" secondItem="71S-hl-czW" secondAttribute="bottom" constant="41" id="Vuo-PX-6S4"/>
+                            <constraint firstItem="71S-hl-czW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bO8-nI-Twr"/>
+                            <constraint firstItem="30l-Gb-RIr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFg-46-2WR"/>
+                            <constraint firstItem="yX5-QH-1Wd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTj-2G-JZX"/>
+                            <constraint firstItem="kEk-kD-VKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohb-U1-v2g"/>
+                            <constraint firstItem="fYP-MV-XrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q3G-Eo-4UW"/>
+                            <constraint firstItem="qUn-71-z66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wdi-gw-tTc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="71S-hl-czW" id="ANC-Xu-mhz"/>
+                        <outlet property="usernameTextField" destination="fYP-MV-XrV" id="ZY1-eQ-ych"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Touch" width="138" height="137"/>
+    </resources>
+</document>

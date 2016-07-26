@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchIDDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQ9-gM-mD5">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fhb-Rz-NAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="piT-SN-l0q"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ET-l1-UDD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l4U-uh-bMH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-Ga-cQP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="el7-DP-AWh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch ID Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-aQ-mnK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="5ld-9D-4nL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6w-k7-6DH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Wou-j2-9ld"/>
+                                    <constraint firstAttribute="height" constant="26" id="cIo-h9-9BR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DC-fz-Xf7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LgO-Nu-dSn"/>
+                                    <constraint firstAttribute="height" constant="80" id="Unh-QQ-2EA"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Touch"/>
+                                <connections>
+                                    <action selector="touchIDButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BaG-V3-Fan"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ET-l1-UDD" secondAttribute="trailing" constant="21" id="4av-78-a1l"/>
+                            <constraint firstItem="9DC-fz-Xf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7vh-RU-WGz"/>
+                            <constraint firstItem="NLg-aQ-mnK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="A1Z-Ll-0pI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jQ9-gM-mD5" secondAttribute="trailing" constant="84" id="W9f-N6-fmY"/>
+                            <constraint firstItem="0ET-l1-UDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="Y0E-Pl-wuX"/>
+                            <constraint firstItem="XHe-Ga-cQP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="a9J-Hc-H7I"/>
+                            <constraint firstItem="XHe-Ga-cQP" firstAttribute="top" secondItem="0ET-l1-UDD" secondAttribute="bottom" constant="33" id="anN-WU-w2Q"/>
+                            <constraint firstItem="jQ9-gM-mD5" firstAttribute="top" secondItem="XHe-Ga-cQP" secondAttribute="bottom" constant="41" id="fBP-P9-yZ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NLg-aQ-mnK" secondAttribute="trailing" constant="21" id="fYW-BL-1VE"/>
+                            <constraint firstItem="9DC-fz-Xf7" firstAttribute="top" secondItem="m6w-k7-6DH" secondAttribute="bottom" constant="37" id="t3a-7U-cug"/>
+                            <constraint firstItem="0ET-l1-UDD" firstAttribute="top" secondItem="NLg-aQ-mnK" secondAttribute="bottom" constant="40" id="tCi-uZ-dwB"/>
+                            <constraint firstItem="NLg-aQ-mnK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="vRp-O6-jQX"/>
+                            <constraint firstItem="jQ9-gM-mD5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="wG0-yH-hmI"/>
+                            <constraint firstItem="m6w-k7-6DH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMN-9r-FAg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XHe-Ga-cQP" secondAttribute="trailing" constant="21" id="yOj-yS-CrE"/>
+                            <constraint firstItem="m6w-k7-6DH" firstAttribute="top" secondItem="jQ9-gM-mD5" secondAttribute="bottom" constant="36" id="ylD-UE-IxJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="XHe-Ga-cQP" id="fNn-U4-9Ew"/>
+                        <outlet property="usernameTextField" destination="0ET-l1-UDD" id="JNN-Mt-MW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Touch" width="138" height="137"/>
+    </resources>
+</document>
